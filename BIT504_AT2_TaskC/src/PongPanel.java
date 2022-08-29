@@ -17,7 +17,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	private final static Color BACKGROUND_COLOUR = Color.WHITE;
 	private final static int TIMER_DELAY = 10;
 	private final static int BALL_MOVEMENT_SPEED = 3;
-	private final static int POINTS_TO_WIN = 3;
+	private final static int POINTS_TO_WIN = 5;
 	private final static int SCORE_TEXT_X = 100;
 	private final static int SCORE_TEXT_Y = 100;
 	private final static int SCORE_FONT_SIZE = 50;
@@ -33,7 +33,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	Ball ball;
 	Paddle paddle1, paddle2;
 	
-	int player1Score = 0, player2Score = 0;
+	int player1Score = -5, player2Score = -5;
 	Player gameWinner;
 	
 	public PongPanel() {
