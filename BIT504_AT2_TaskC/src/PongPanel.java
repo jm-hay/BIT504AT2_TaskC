@@ -14,7 +14,7 @@ import javax.swing.Timer;
 
 public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	
-	private final static Color BACKGROUND_COLOUR = Color.BLACK;
+	private final static Color BACKGROUND_COLOUR = Color.WHITE;
 	private final static int TIMER_DELAY = 5;
 	private final static int BALL_MOVEMENT_SPEED = 1;
 	private final static int POINTS_TO_WIN = 3;
@@ -26,7 +26,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	private final static int WINNER_TEXT_Y = 200;
 	private final static int WINNER_FONT_SIZE = 40;
 	private final static String WINNER_FONT_FAMILY = "Serif";
-	private final static String WINNER_TEXT = "WIN!";
+	private final static String WINNER_TEXT = "WINNER!";
 	
 	GameState gameState = GameState.Initialising;
 	
@@ -132,7 +132,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 		Graphics2D g2d = (Graphics2D) g.create();
         Stroke dashed = new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{9}, 0);
         g2d.setStroke(dashed);
-        g2d.setPaint(Color.WHITE);
+        g2d.setPaint(Color.YELLOW);
         g2d.drawLine(getWidth() / 2, 0, getWidth() / 2, getHeight());
         g2d.dispose();
 	}
